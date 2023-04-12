@@ -17,9 +17,10 @@
 
                     </div>
                     <div class=" col col-md-3 px-1">
-                        <button class="btn-outline-success btn update-cart" data-product=""
+                        <button @click="increase" class="btn-outline-success btn update-cart" data-product=""
                                 data-action="add" href="">Add to cart
                         </button>
+
 
                     </div>
                 </div>
@@ -31,9 +32,15 @@
 
 <script>
 import navbar from './navbar.vue'
+import store from "@/store/store";
 export default {
     name: "TheStore",
-
+    methods: {
+      increase(){
+         store.state.count++;
+         console.log(store.state.count);
+      },
+    },
 }
 </script>
 

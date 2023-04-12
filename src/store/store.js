@@ -1,7 +1,7 @@
 import {createStore} from 'vuex';
 
 const store = createStore({
-    state : {
+    state: {
         // cart: [],
         // items: [
         //     {
@@ -19,18 +19,23 @@ const store = createStore({
         //     },
         // ],
         users: [],
-        token: null,
+        count: 0,
 
     },
     mutations: {
-
+        increase(state) {
+            state.count++;
+        },
+        getCount(state) {
+            return state.count;
+        },
         addUser(state, user) {
             state.users.push(user);
         }
     },
     actions: {
-        addUsers(context, user) {
-            context.commit('addUser', user);
+        increase(context) {
+            context.commit('increase');
         }
     }
 });
