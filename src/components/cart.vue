@@ -3,7 +3,8 @@
     <div class="container-md p-1 card ">
         <div class="row">
             <div class=" col col-md-4 ">
-                <a class="btn btn-outline-primary " href=""> &lt;- Back to shoping </a>
+                <router-link to="/" class="btn bg-info"> &lt;- Back to shoping</router-link>
+
             </div>
             <div class="col-auto ">
                 <h2>Cart</h2>
@@ -13,9 +14,9 @@
         <hr>
         <table class="table">
             <tr>
-                <th><h5>Items: <strong></strong></h5></th>
-                <th><h5>Total: <strong></strong></h5></th>
-                <th><a style="float: right;margin: 5px" class="btn btn-success" href="checkout">Checkout</a>
+                <th><h5>Items: <strong>1</strong></h5></th>
+                <th><h5>Total: <strong>100</strong></h5></th>
+                <th><a style="float: right;margin: 5px" class="btn bg-success" href="checkout">Checkout</a>
 <!--                <th><a style="float: right;margin: 5px" class="btn btn-success" href="">Checkout</a>-->
 
                 </th>
@@ -32,16 +33,16 @@
                 <th scope="col">Item</th>
                 <th scope="col">Price</th>
                 <th scope="col">Quantity</th>
-                <th scope="col"></th>
+
                 <th scope="col">Total</th>
             </tr>
             </thead>
             <tbody>
             <!--      {% for  elem in items %}-->
             <tr>
-                <th scope="row"><img src="" style="width: 100px ; height: 100px"></th>
-                <td><p class="px-lg-2"></p></td>
-                <td><p class="px-lg-2"></p></td>
+                <th scope="row"><img src="../images/Xiaomi-Mi-Notebook-Pro-15-2020-Intel-0_large.jpg" style="width: 100px ; height: 100px"></th>
+                <td><p class="px-lg-2"></p> 1  </td>
+                <td><p class="px-lg-2"></p>1000</td>
                 <td>
                     <p class="px-sm-2">
                         <button class=" btn  update-cart  " data-product='' data-action='add'>
@@ -53,7 +54,7 @@
                     </p>
 
                 </td>
-                <td><p class="px-lg-2"></p></td>
+                <td><p class="px-lg-2"></p> 1000</td>
             </tr>
             <!--      {% endfor %}-->
             </tbody>

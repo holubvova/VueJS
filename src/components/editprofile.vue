@@ -20,7 +20,6 @@
                             </div>
                             <form>
                                 <div class="input-group mb-3">
-
                                     <span class="input-group-text" id="=birthday">Birthday:</span>
                                     <input type="date" class="form-control">
                                 </div>
@@ -30,7 +29,6 @@
                                 <select class="form-select " aria-label="Default select example">
                                     <option selected value="1">Man</option>
                                     <option value="2">Woman</option>
-
                                 </select>
                             </div>
                         </div>

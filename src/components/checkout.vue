@@ -17,7 +17,21 @@
                 <div id="shipping-info">
                     <div class="text-center"><p><h4>Delivery address</h4></p></div>
 
-                    <!--                    <form method="post" name="checkout_id">-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="username">City</span>
+                        <input type="text" class="form-control" placeholder="City" aria-label="First Name"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="username">Address</span>
+                        <input type="text" class="form-control" placeholder="Address" aria-label="First Name"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="username">Phone</span>
+                        <input type="text" class="form-control" placeholder="Phone" aria-label="First Name"
+                               aria-describedby="basic-addon1">
+                    </div>
 
 
                     <div class="d-grid gap-2 py-2">
@@ -31,7 +45,7 @@
 
                 <div class="row  p-2">
                     <div class="col-md-5 p-3">
-                        <a class="btn btn-outline-primary" href=""> &lt;- Back to Cart</a>
+                        <a class="btn btn-outline-primary" href="/"> &lt;- Back to Cart</a>
                     </div>
                     <div class="col-md-4">
                         <p><h2><strong>Cart</strong></h2></p>
@@ -50,13 +64,13 @@
                     <tbody>
                     <!--                    {% for elem in items %}-->
                     <tr>
-                        <th scope="row"><img src=""
+                        <th scope="row"><img src="../images/Xiaomi-Mi-Notebook-Pro-15-2020-Intel-0_large.jpg"
                                              style="width: 50px ; height: 50px">
                         </th>
-                        <td><p class="px-lg-2"> product.name</p></td>
-                        <td><p class="px-lg-2"> product.price</p></td>
-                        <td><p class="px-lg-2"> quantity</p></td>
-                        <td><p class="px-lg-2"> </p></td>
+                        <td><p class="px-lg-2"> Xiaomi notebook PRO</p></td>
+                        <td><p class="px-lg-2"> 1000</p></td>
+                        <td><p class="px-lg-2"> 1</p></td>
+                        <td><p class="px-lg-2">1000 </p></td>
                     </tr>
                     <!--                    {% endfor %}-->
                     </tbody>
@@ -65,8 +79,8 @@
                 <div class="row-auto">
                     <table class="table">
                         <tr>
-                            <th><h5>Items: <strong>get_cart_items</strong></h5></th>
-                            <th><h5>Total: <strong>get_cart_total</strong></h5></th>
+                            <th><h5>Items: <strong>1</strong></h5></th>
+                            <th><h5>Total: <strong>1000</strong></h5></th>
 <!--                            {#-->
                             <th><a style="float: right;margin: 5px" class="btn btn-success"
                                     href="">Back to Cart </a></th>

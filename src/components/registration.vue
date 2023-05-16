@@ -91,13 +91,27 @@ export default {
             };
             console.log(data);
 
+            const login_data = {
+                username: v,
+                password: this.password
+            };
+
 
             if (this.checkPassword() && this.checkDate() && this.checkSex() && this.checkEmail() ) {
-                var correct_data = response.data;
+                var correct_data = data;
                 correct_data.delete('confirmPassword');
                 console.log(correct_data);
-                // store.state.users.push(correct_data);
 
+                axios.post('http://127.0.0.1:8000/api/auth/users/', correct_data)
+                    .then(response => {
+                        console.log(response);
+                        this.checkData(response);
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+                console.warn(response.data);
+                // store.state.users.push(correct_data);
             }else
             {
                 alert("Please fill all fields");

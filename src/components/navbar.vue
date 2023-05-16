@@ -2,7 +2,9 @@
     <nav class="navbar bg-gradient navbar-dark navbar-expand-lg bg-body-tertiary " style="background-color: #6E290F ">
         <div class="container-fluid container px-2 px-lg-3">
 
-            <a class="navbar-brand" style="color: #1a1e21" href="">Shops</a>
+            <a class="navbar-brand" style="color: #1a1e21" href=""><img
+                    style="width: 30px; height: 30px ; margin-left:5%"
+                    src="../assets/logo.svg">Shops</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +23,7 @@
                         <ul class="dropdown-menu">
 
                             <router-link to="profile" class="dropdown-item">Profile</router-link>
-                            <router-link to="logout" class="dropdown-item">logout</router-link>
+                            <router-link to="login" class="dropdown-item">logout</router-link>
                             <router-link to="login" class="dropdown-item">login</router-link>
 
                         </ul>

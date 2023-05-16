@@ -13,24 +13,24 @@
 
                             <tr>
                                 <th scope="row">Name</th>
-                                <td>username</td>
+                                <td>Volodymyr</td>
                             </tr>
                             <tr>
                                 <th scope="row">Email</th>
-                                <td>el.email</td>
+                                <td>v.holub@test.com</td>
                             </tr>
                             <tr>
                                 <th scope="row">Birthday</th>
-                                <td> el.birth_date</td>
+                                <td>17.05.2022</td>
                             </tr>
                             <tr>
                                 <th scope="row">Sex</th>
-                                <td>el.get_sex_display</td>
+                                <td>Man</td>
                             </tr>
 
                         </table>
                         <a type="button" class="btn btn-secondary" href="editprofile">
-                            <img src="" width="16" height="16">
+                            <img src="../assets/pen.svg" width="16" height="16">
                             Edit
                         </a>
 
