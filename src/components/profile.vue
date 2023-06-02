@@ -5,12 +5,9 @@
             <div class="col"></div>
             <div class="col-md-5  rounded justify-content-center  ">
                 <div class="card card-body " style="background-color:#e3ffff">
-
-
                     <h1 style="text-align: center">profile </h1>
                     <div class="mb-md-3 d-grid gap-3 ">
                         <table class="table ">
-
                             <tr>
                                 <th scope="row">Name</th>
                                 <td>Volodymyr</td>
@@ -30,10 +27,9 @@
 
                         </table>
                         <a type="button" class="btn btn-secondary" href="editprofile">
-                            <img src="../assets/pen.svg" width="16" height="16">
+<!--                            <img src="../assets/pen.svg" width="16" height="16">-->
                             Edit
                         </a>
-
 
                     </div>
 
