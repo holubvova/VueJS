@@ -1,29 +1,9 @@
-# vuejs
+Голуб Володимир Володимирович,КВ-22мп,
 
-This template should help get you started developing with Vue 3 in Vite.
+Мета: навчитись користуватись засобами тестування Web-інтерфейсу користувача за допомогою фреймворка модульного тестування Javascript/Jest/Vue-Test-Utils, а також End-To-End (системного) тестування за допомогою фреймворку cypress.
 
-## Recommended IDE Setup
+Загальне завдання: розробити засоби сценарії (код) для тестування клієнтської частини (інтерфейсу користувача) Web-додатку.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Інструменти розробки: VS Code, Javascript/VueJS/Jest, cypress.io
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Звіт : https://docs.google.com/document/d/1291IxPCYgxPZa9hpM6_6c-2509pxZhdKRTMedLllLiI/edit?usp=sharing
