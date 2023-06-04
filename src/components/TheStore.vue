@@ -45,7 +45,6 @@
                                 data-action="add" href="">Add to cart
                         </button>
 
-
                     </div>
                 </div>
 

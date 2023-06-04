@@ -1,15 +1,15 @@
 import {fireEvent, render, screen,} from '@testing-library/vue';
 import {mount} from '@vue/test-utils';
-import editprofile from './editprofile.vue';
+import checkout from './checkout.vue';
 
 test('Check displayed button Save  ', () => {
-    render(editprofile)
-    screen.getByText('Save')
+    render(checkout)
+    screen.getByText('Submit')
 })
 
 
 const factory = (values = {}) => {
-    return mount(editprofile, {
+    return mount(checkout, {
         data() {
             return {
                 ...values,
@@ -21,7 +21,7 @@ const factory = (values = {}) => {
 
 describe('editprofile FROM', () => {
     it('renders a vue instance', () => {
-        const wrapper = mount(editprofile)
+        const wrapper = mount(checkout)
         expect(wrapper.vm).toBeTruthy()
     })
     it('renders a form', () => {
@@ -32,23 +32,19 @@ describe('editprofile FROM', () => {
         const wrapper = factory()
         expect(wrapper.find('input').exists()).toBe(true)
     })
-    it('renders a input Username', () => {
+    it('renders a input City, addres, Phone', () => {
         const wrapper = factory()
-        const UsernameInput = wrapper.find('#username1');
-        UsernameInput.setValue('Names');
-        expect(wrapper.vm.form.userName).toBe('Names')
+        const CITY = wrapper.get('#City');
+        CITY.setValue('Kyiv');
+        expect(wrapper.vm.city).toBe('Kyiv')
 
-        const EmailInput = wrapper.find('#useremail');
-        EmailInput.setValue('test@test.com');
-        expect(wrapper.vm.form.useremail).toBe('test@test.com');
-
-        const BirthdayInput = wrapper.find('#bday');
-        BirthdayInput.setValue('2021-01-01');
-        expect(wrapper.vm.form.birthDay).toBe('2021-01-01');
-
-        const SexSelect = wrapper.find('[data-usersex]');
-        SexSelect.setValue('2');
-        expect(wrapper.vm.form.sex).toBe('2');
+        const ADDRES = wrapper.find('#address');
+        ADDRES.setValue('Heroiv Ukrainy 1');
+        expect(wrapper.vm.addres).toBe('Heroiv Ukrainy 1');
+        //
+        const phone = wrapper.find('#Phone');
+        phone.setValue('380999999999');
+        expect(wrapper.vm.phone).toBe('380999999999');
 
     })
     // it('check submit', () => {
